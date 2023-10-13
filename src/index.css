@@ -1,13 +1,38 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* @import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities'; */
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root{
+  @apply bg-primary text-primary
+}
+.rounded-div{
+  border: 1px solid #ccc;
+  border-radius: 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background-color: #f0f0f0;
+  padding: 0.5rem;
+  max-width: 1140px;
+  width: 100%;
+  margin: auto;
+}
+.dark{
+  --color-bg-primary:#2d3748;
+  --color-bg-secondary:#283141;
+  --color-text-primary:#2c63c2;
+  --color-text-secondary:#8a8f97;
+  --color-text-accent:#7bd8b9;
+  --color-bg-input:#303c52;
+  --color-bg-button:#55c2b0;
+}
+.light{
+  --color-bg-primary:#e8e9eb;
+  --color-bg-secondary:#bfd2f1;
+  --color-text-primary:#070d18;
+  --color-text-secondary:#293344;
+  --color-text-accent:#29473d;
+  --color-bg-input:#a4a6aa;
+  --color-bg-button:#266359;
 }
